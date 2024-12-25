@@ -20,6 +20,7 @@ jobs:
     - name: Get the most recent tag
       id: get-tag
       run: |
+        git branch --show-current
         # Get the most recent tag on the current branch
         TAG=$(git describe --tags --abbrev=0)
         if [ -z "$TAG" ]; then
