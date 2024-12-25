@@ -20,6 +20,7 @@ jobs:
     - name: Get the most recent tag
       id: get-tag
       run: |
+        git fetch --tags
         git branch --show-current
         git describe --tags --abbrev=0
         # Get the most recent tag on the current branch
