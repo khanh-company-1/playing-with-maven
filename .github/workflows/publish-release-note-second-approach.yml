@@ -15,7 +15,7 @@ jobs:
     - name: Checkout new-release branch
       uses: actions/checkout@v4
       with:
-        ref: new-release
+        ref: refs/heads/new-release
 
     - name: Get the most recent tag
       id: get-tag
