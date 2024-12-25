@@ -18,6 +18,7 @@ jobs:
     - name: Get the most recent tag
       id: get-tag
       run: |
+        git fetch --tags
         MOST_RECENT_TAG=$(git tag --sort=-creatordate | head -n 1)
 
         if [ -z "$MOST_RECENT_TAG" ]; then
