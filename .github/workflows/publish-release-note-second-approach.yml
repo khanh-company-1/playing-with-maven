@@ -21,7 +21,9 @@ jobs:
       id: get-tag
       run: |
         git fetch --tags
+        git tag -l
         git branch --show-current
+        git log
         git describe --tags --abbrev=0
         # Get the most recent tag on the current branch
         TAG=$(git describe --tags --abbrev=0)
