@@ -2,7 +2,7 @@ package com.khanhcompany1.playingwithmaven;
 
 public class App {
     public static void main(String[] args) {
-        int a = 10;
+        int a = 50;
         int b = 30;
         int sum = a + b;
         System.out.println("Sum of a and b is: " + sum);
