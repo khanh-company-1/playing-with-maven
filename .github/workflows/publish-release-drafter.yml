@@ -8,4 +8,4 @@ on:
 
 jobs:
   publish_release_drafter:
-    uses: khanh-company-1/github-workflows/.github/workflows/publish_release_drafter.yml@main
+    uses: khanh-company-1/github-workflows/.github/workflows/publish-release-drafter.yml@main
