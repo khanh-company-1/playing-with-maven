@@ -8,4 +8,7 @@ on:
 
 jobs:
   invoke_release_drafter:
+    permissions:
+      contents: read
+      pull-requests: write
     uses: khanh-company-1/github-workflows/.github/workflows/release-drafter.yml@main
