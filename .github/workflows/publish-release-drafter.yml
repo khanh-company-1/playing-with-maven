@@ -8,4 +8,5 @@ on:
 
 jobs:
   publish_release_drafter:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     uses: khanh-company-1/github-workflows/.github/workflows/publish-release-drafter.yml@main
