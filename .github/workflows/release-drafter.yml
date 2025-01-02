@@ -8,5 +8,5 @@ on:
     types: [opened, reopened, synchronize]
 
 jobs:
-  invoke_release_drafter:
+  release_drafter:
     uses: khanh-company-1/github-workflows/.github/workflows/release-drafter.yml@main
